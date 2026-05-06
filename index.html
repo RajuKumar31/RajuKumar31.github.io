@@ -35,6 +35,7 @@
     .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(37,99,235,0.15) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(245,158,11,0.08) 0%, transparent 50%); }
     .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1; width: 100%; max-width: 1200px; }
     .hero-eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37,99,235,0.2); border: 1px solid rgba(37,99,235,0.4); color: #93c5fd; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: 50px; margin-bottom: 1.5rem; }
+    .hero-name { font-family: 'Fraunces', serif; font-size: clamp(1rem, 2vw, 1.3rem); color: #f59e0b; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.6rem; }
     .hero h1 { font-family: 'Fraunces', serif; font-size: clamp(2.8rem, 5vw, 4.8rem); color: white; line-height: 1.05; margin-bottom: 1rem; font-weight: 900; letter-spacing: -0.03em; }
     .hero h1 em { color: #60a5fa; font-style: italic; }
     .hero-position { font-size: 1rem; color: #93c5fd; font-weight: 500; margin-bottom: 1.5rem; }
@@ -45,6 +46,8 @@
     .btn-primary:hover { background: #1d4ed8; transform: translateY(-2px); }
     .btn-outline { background: transparent; color: white; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; border: 1.5px solid rgba(255,255,255,0.3); transition: all 0.25s; }
     .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.08); transform: translateY(-2px); }
+    .btn-resume { background: rgba(245,158,11,0.15); color: #fbbf24; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; border: 1.5px solid rgba(245,158,11,0.4); transition: all 0.25s; }
+    .btn-resume:hover { background: rgba(245,158,11,0.28); border-color: #f59e0b; transform: translateY(-2px); }
     .hero-right { display: flex; flex-direction: column; gap: 1rem; }
     .stat-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.2rem 1.5rem; display: flex; align-items: center; gap: 1rem; transition: all 0.3s; }
     .stat-card:hover { background: rgba(255,255,255,0.1); transform: translateX(4px); }
@@ -71,7 +74,8 @@
     .skill-cat { background: var(--off-white); border-radius: 12px; padding: 1.4rem; border: 1px solid var(--border); }
     .skill-cat-title { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 1rem; }
     .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .skill-tag { background: white; border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.82rem; font-weight: 500; color: var(--dark-grey); transition: all 0.2s; }
+    .skill-tag { background: white; border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.82rem; font-weight: 500; color: var(--dark-grey); transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
+    .skill-icon { width: 16px; height: 16px; flex-shrink: 0; border-radius: 2px; }
     .skill-tag:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
 
     .featured { background: var(--navy); }
@@ -163,7 +167,7 @@
 
     @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
     .hero-content > * { animation: fadeUp 0.7s ease forwards; opacity: 0; }
-    .hero-eyebrow { animation-delay: 0.1s; } .hero h1 { animation-delay: 0.2s; } .hero-position { animation-delay: 0.3s; } .hero-statement { animation-delay: 0.4s; } .hero-btns { animation-delay: 0.5s; }
+    .hero-eyebrow { animation-delay: 0.1s; } .hero-name { animation-delay: 0.15s; } .hero h1 { animation-delay: 0.2s; } .hero-position { animation-delay: 0.3s; } .hero-statement { animation-delay: 0.4s; } .hero-btns { animation-delay: 0.5s; }
 
     @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .hero-right { display: none; } .pos-grid { grid-template-columns: 1fr; } .featured-grid { grid-template-columns: 1fr; } .nav-links { display: none; } }
   </style>
@@ -187,12 +191,14 @@
     <div class="hero-grid">
       <div class="hero-content">
         <span class="hero-eyebrow">📍 Bengaluru · Open to Chennai, Hyderabad, Kerala, Pune & Goa</span>
+        <div class="hero-name">Raju Kumar S</div>
         <h1>Turning <em>operations</em> data into decisions.</h1>
         <div class="hero-position">Data Analyst · Operations & Quality Specialist</div>
         <p class="hero-statement"><strong>7+ years in operations. 12 projects. Zero guesswork.</strong><br>I transform messy operational data into dashboards, models, and insights that help teams make faster, smarter decisions — combining deep business context with hands-on analytics.</p>
         <div class="hero-btns">
           <a href="#featured" class="btn-primary">See Featured Work</a>
           <a href="#contact" class="btn-outline">Get In Touch</a>
+          <a href="Raju_Kumar_S_Resume_DA_BA_2026.pdf" download class="btn-resume">⬇ Download Resume</a>
         </div>
       </div>
       <div class="hero-right">
@@ -209,10 +215,11 @@
       <div class="pos-text">
         <div class="section-eyebrow">About Me</div>
         <h2 class="section-title">Business thinking first. Tools second.</h2>
-        <p>I'm a Bengaluru-based data analyst with 7+ years in operations, client servicing, and quality assurance — primarily in the US mortgage industry and event operations. I understand how operational teams actually work, what decisions managers need to make, and what data problems look like before they become dashboard problems.</p>
-        <p>After building KPI and SLA reporting frameworks by hand in Excel across years of operations work, I formalized that skill set into analytics — teaching myself Power BI, SQL, Tableau, and Python through 12 projects on real datasets.</p>
-        <div class="highlight">"I don't just build dashboards. I ask what decision this dashboard needs to support — and then I build the shortest path from data to that decision."</div>
-        <p>That operational lens is what separates my work from portfolios built purely on coursework.</p>
+        <p>I'm Raju Kumar S, a Bengaluru-based Data Analyst with 7+ years of experience in operations, client servicing, quality assurance, and process improvement. My journey into analytics started long before learning Power BI or Python — I was already solving business problems through KPI reporting, workflow analysis, productivity tracking, and operational reviews.</p>
+        <p>What sets me apart from a traditional entry-level analyst is my operational understanding. I know how reporting impacts managers, how workflow bottlenecks affect productivity, and what stakeholders actually need from dashboards to make decisions confidently.</p>
+        <p>Over the years I have worked closely with SLA monitoring, quality control, and performance reporting — building a strong foundation in analytical thinking before transitioning into modern analytics tools.</p>
+        <div class="highlight">"I bridge the gap between business operations and analytics by transforming complex data into clear insights that drive smarter decisions."</div>
+        <p>Today, I combine that operational thinking with Power BI, Tableau, SQL, Python, and Excel to build analytics solutions focused on usability, clarity, and business impact. I believe great analytics is not just about building dashboards — it is about understanding the business behind the data and helping organizations make better decisions with confidence.</p>
       </div>
       <div class="pos-cards">
         <div class="pos-card"><div class="pos-card-icon">🎓</div><div><h4>Education</h4><p>B.Com (Finance), Dayananda Sagar Institutions, 2017</p></div></div>
@@ -225,13 +232,54 @@
 
   <section id="skills">
     <div class="section-eyebrow">Technical Skills</div>
-    <h2 class="section-title">Tools & Technologies</h2>
+    <h2 class="section-title">Tools &amp; Technologies</h2>
     <p class="section-sub">All skills built through independent projects and certified coursework — not just tutorials.</p>
     <div class="skills-categories">
-      <div class="skill-cat"><div class="skill-cat-title">📊 BI & Visualization</div><div class="skill-tags"><span class="skill-tag">Power BI</span><span class="skill-tag">Tableau</span><span class="skill-tag">DAX</span><span class="skill-tag">Power Query</span><span class="skill-tag">Star Schema</span></div></div>
-      <div class="skill-cat"><div class="skill-cat-title">🗄️ Data & Databases</div><div class="skill-tags"><span class="skill-tag">SQL</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">Data Modelling</span><span class="skill-tag">Data Cleaning</span></div></div>
-      <div class="skill-cat"><div class="skill-cat-title">🐍 Python & ML</div><div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">Scikit-learn</span><span class="skill-tag">XGBoost</span><span class="skill-tag">MLflow</span><span class="skill-tag">Streamlit</span></div></div>
-      <div class="skill-cat"><div class="skill-cat-title">📋 Operations & Workflow</div><div class="skill-tags"><span class="skill-tag">Advanced Excel</span><span class="skill-tag">KPI Reporting</span><span class="skill-tag">SLA Management</span><span class="skill-tag">Git & GitHub</span></div></div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">📊 BI &amp; Visualization</div>
+        <div class="skill-tags">
+          <span class="skill-tag"><img src="https://img.icons8.com/color/20/power-bi.png" alt="" class="skill-icon">Power BI</span>
+          <span class="skill-tag"><img src="https://img.icons8.com/color/20/tableau-software.png" alt="" class="skill-icon">Tableau</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#F2C811"/><text x="1.5" y="14" font-size="8.5" font-weight="800" fill="#1a1a1a" font-family="sans-serif">DAX</text></svg>DAX</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#217346"/><text x="2" y="14" font-size="8.5" font-weight="700" fill="white" font-family="sans-serif">PQ</text></svg>Power Query</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#2563eb"/><polygon points="10,3 17,7.5 17,16 10,19 3,16 3,7.5" fill="none" stroke="white" stroke-width="1.5"/><line x1="10" y1="3" x2="10" y2="19" stroke="white" stroke-width="1"/><line x1="3" y1="7.5" x2="17" y2="7.5" stroke="white" stroke-width="1"/></svg>Star Schema</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">🗄️ Data &amp; Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#2563eb"/><text x="3" y="14" font-size="9" font-weight="800" fill="white" font-family="sans-serif">SQL</text></svg>SQL</span>
+          <span class="skill-tag"><img src="https://img.icons8.com/color/20/postgreesql.png" alt="" class="skill-icon">PostgreSQL</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#7c3aed"/><text x="2" y="14" font-size="8" font-weight="700" fill="white" font-family="sans-serif">DM</text></svg>Data Modelling</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#0891b2"/><text x="2.5" y="14" font-size="8" font-weight="700" fill="white" font-family="sans-serif">DC</text></svg>Data Cleaning</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">🐍 Python &amp; ML</div>
+        <div class="skill-tags">
+          <span class="skill-tag"><img src="https://img.icons8.com/color/20/python--v1.png" alt="" class="skill-icon">Python</span>
+          <span class="skill-tag"><img src="https://img.icons8.com/color/20/pandas.png" alt="" class="skill-icon">Pandas</span>
+          <span class="skill-tag"><img src="https://img.icons8.com/color/20/numpy.png" alt="" class="skill-icon">NumPy</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#f97316"/><text x="1.5" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">SKL</text></svg>Scikit-learn</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#e35d1b"/><text x="1.5" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">XGB</text></svg>XGBoost</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#0194e2"/><text x="1.5" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">MLf</text></svg>MLflow</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#ff4b4b"/><text x="2" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">ST</text></svg>Streamlit</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">📋 Operations &amp; Workflow</div>
+        <div class="skill-tags">
+          <span class="skill-tag"><img src="https://img.icons8.com/color/20/microsoft-excel-2019--v1.png" alt="" class="skill-icon">Advanced Excel</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#f59e0b"/><text x="2" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">KPI</text></svg>KPI Reporting</span>
+          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#10b981"/><text x="2" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">SLA</text></svg>SLA Management</span>
+          <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/18/24292e/github.png" alt="" class="skill-icon">Git &amp; GitHub</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
