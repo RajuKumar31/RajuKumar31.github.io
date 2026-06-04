@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raju Kumar S — Data Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raju Kumar S — Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
       --navy: #0a1628;
       --blue: #1a3a6b;
@@ -184,13 +185,7 @@
     .stat-card:nth-child(4) { animation-delay: 0.95s; }
 
     /* ── Floating particles on hero ── */
-    .particle { position: absolute; border-radius: 50%; pointer-events: none; animation: float linear infinite; }
-    @keyframes float {
-      0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
-      10%  { opacity: 1; }
-      90%  { opacity: 0.6; }
-      100% { transform: translateY(-100vh) translateX(60px) scale(0.4); opacity: 0; }
-    }
+    .particle { display: none; }
 
     /* ── Scroll reveal ── */
     .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.22,.68,0,1.2); }
@@ -217,7 +212,7 @@
     .skill-tag:hover { transform: translateY(-2px) scale(1.05) !important; }
 
     /* ── Timeline dot pulse ── */
-    @keyframes pulse { 0%,100% { box-shadow: 0 0 0 3px var(--accent); } 50% { box-shadow: 0 0 0 7px rgba(37,99,235,0.2); } }
+    @keyframes pulse { 0%,100% { box-shadow: 0 0 0 3px var(--accent); } 50% { box-shadow: 0 0 0 5px rgba(37,99,235,0.12); } }
     .exp-dot { animation: pulse 2.5s ease infinite; }
 
     /* ── Cursor blink ── */
@@ -233,437 +228,398 @@
   </style>
 </head>
 <body>
+<nav>
+<a class="nav-logo" href="#">RK</a>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#featured">Featured</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a class="nav-cta" href="mailto:rajukumarsam4@gmail.com">Contact</a>
+</nav>
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-grid">
+<div class="hero-content">
+<span class="hero-eyebrow">📍 Bengaluru · Open to Bengaluru, Chennai, Hyderabad, Kochi &amp; Pune</span>
+<div class="hero-name">Raju Kumar S</div>
+<h1>Turning <em>operations</em> data into decisions.</h1>
+<div class="hero-position">Data Analyst · Operations &amp; Quality Specialist</div>
+<p class="hero-statement"><strong>7+ years in operations. Business thinking first. Tools second.</strong><br/>I transform messy operational data into dashboards, models, and insights that help teams make faster, smarter decisions — combining deep business context with hands-on analytics.</p>
+<div class="hero-btns">
+<a class="btn-primary" href="#featured">See Featured Work</a>
+<a class="btn-outline" href="#contact">Get In Touch</a>
+<a class="btn-resume" download href="Raju_Kumar_BI_Data_Analyst.pdf">⬇ Download Resume</a>
+</div>
+</div>
+<div class="hero-right">
+<div class="stat-card"><span class="stat-icon">📅</span><div><div class="stat-num">7+</div><div class="stat-label">Years in Operations &amp; Analytics</div></div></div>
+<div class="stat-card"><span class="stat-icon">📊</span><div><div class="stat-num">7</div><div class="stat-label">Selected Analytics Projects</div></div></div>
+<div class="stat-card"><span class="stat-icon">🗄️</span><div><div class="stat-num">1M+</div><div class="stat-label">Records Analyzed Across Projects</div></div></div>
+<div class="stat-card"><span class="stat-icon">🛠️</span><div><div class="stat-num">5</div><div class="stat-label">Tools: Power BI · SQL · Tableau · Python · Excel</div></div></div>
+</div>
+</div>
+</section>
+<section class="positioning" id="about">
+<div class="pos-grid">
+<div class="pos-text">
+<div class="section-eyebrow">About Me</div>
+<h2 class="section-title">Business thinking first. Tools second.</h2>
+<p>I'm Raju Kumar S, a Bengaluru-based Data Analyst with 7+ years of experience in operations, client servicing, quality assurance, and process improvement. My journey into analytics started long before learning Power BI or Python — I was already solving business problems through KPI reporting, workflow analysis, productivity tracking, and operational reviews.</p>
+<p>What sets me apart from a traditional entry-level analyst is my operational understanding. I know how reporting impacts managers, how workflow bottlenecks affect productivity, and what stakeholders actually need from dashboards to make decisions confidently.</p>
+<p>Over the years I have worked closely with SLA monitoring, quality control, and performance reporting — building a strong foundation in analytical thinking before transitioning into modern analytics tools.</p>
+<div class="highlight">"I bridge the gap between business operations and analytics by transforming complex data into clear insights that drive smarter decisions."</div>
+<p>Today, I combine that operational thinking with Power BI, Tableau, SQL, Python, and Excel to build analytics solutions focused on usability, clarity, and business impact. I believe great analytics is not just about building dashboards — it is about understanding the business behind the data and helping organizations make better decisions with confidence. My focus is Business Intelligence, operational reporting, and decision-support analytics.</p>
+</div>
+<div class="pos-cards">
+<div class="pos-card"><div class="pos-card-icon">🎓</div><div><h4>Education</h4><p>B.Com (Finance), Dayananda Sagar Institutions, 2017</p></div></div>
+<div class="pos-card"><div class="pos-card-icon">🏦</div><div><h4>Domain Expertise</h4><p>US Mortgage Operations, Quality Assurance, Event Management, SLA Reporting</p></div></div>
+<div class="pos-card"><div class="pos-card-icon">🎯</div><div><h4>What I Solve</h4><p>Turning manual, Excel-based reporting into automated dashboards that reduce effort and surface decisions faster</p></div></div>
+<div class="pos-card"><div class="pos-card-icon">📍</div><div><h4>Target Roles</h4><p>Data Analyst · Business Analyst · MIS Analyst · Reporting Analyst — Entry to Associate level</p></div></div>
+</div>
+</div>
+</section>
+<section id="skills">
+<div class="section-eyebrow">Technical Skills</div>
+<h2 class="section-title">Tools &amp; Technologies</h2>
+<p class="section-sub">All skills built through independent projects and certified coursework — not just tutorials.</p>
+<div class="skills-categories">
+<div class="skill-cat">
+<div class="skill-cat-title">📊 BI &amp; Visualization</div>
+<div class="skill-tags">
+<span class="skill-tag"><img alt="" class="skill-icon" src="https://img.icons8.com/color/20/power-bi.png"/>Power BI</span>
+<span class="skill-tag"><img alt="" class="skill-icon" src="https://img.icons8.com/color/20/tableau-software.png"/>Tableau</span>
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#F2C811" height="20" rx="3" width="20"></rect><text fill="#1a1a1a" font-family="sans-serif" font-size="8.5" font-weight="800" x="1.5" y="14">DAX</text></svg>DAX</span>
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#217346" height="20" rx="3" width="20"></rect><text fill="white" font-family="sans-serif" font-size="8.5" font-weight="700" x="2" y="14">PQ</text></svg>Power Query</span>
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#2563eb" height="20" rx="3" width="20"></rect><polygon fill="none" points="10,3 17,7.5 17,16 10,19 3,16 3,7.5" stroke="white" stroke-width="1.5"></polygon><line stroke="white" stroke-width="1" x1="10" x2="10" y1="3" y2="19"></line><line stroke="white" stroke-width="1" x1="3" x2="17" y1="7.5" y2="7.5"></line></svg>Star Schema</span>
+</div>
+</div>
+<div class="skill-cat">
+<div class="skill-cat-title">🗄️ Data &amp; Databases</div>
+<div class="skill-tags">
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#2563eb" height="20" rx="3" width="20"></rect><text fill="white" font-family="sans-serif" font-size="9" font-weight="800" x="3" y="14">SQL</text></svg>SQL</span>
+<span class="skill-tag"><img alt="" class="skill-icon" src="https://img.icons8.com/color/20/postgreesql.png"/>PostgreSQL</span>
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#7c3aed" height="20" rx="3" width="20"></rect><text fill="white" font-family="sans-serif" font-size="8" font-weight="700" x="2" y="14">DM</text></svg>Data Modelling</span>
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#0891b2" height="20" rx="3" width="20"></rect><text fill="white" font-family="sans-serif" font-size="8" font-weight="700" x="2.5" y="14">DC</text></svg>Data Cleaning</span>
+</div>
+</div>
+<div class="skill-cat">
+<div class="skill-cat-title">🐍 Python &amp; Analytics</div>
+<div class="skill-tags">
+<span class="skill-tag"><img alt="" class="skill-icon" src="https://img.icons8.com/color/20/python--v1.png"/>Python</span>
+<span class="skill-tag"><img alt="" class="skill-icon" src="https://img.icons8.com/color/20/pandas.png"/>Pandas</span>
+<span class="skill-tag"><img alt="" class="skill-icon" src="https://img.icons8.com/color/20/numpy.png"/>NumPy</span>
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#f97316" height="20" rx="3" width="20"></rect><text fill="white" font-family="sans-serif" font-size="7.5" font-weight="700" x="1.5" y="14">SKL</text></svg>Scikit-learn</span>
+</div>
+</div>
+<div class="skill-cat">
+<div class="skill-cat-title">📋 Operations &amp; Workflow</div>
+<div class="skill-tags">
+<span class="skill-tag"><img alt="" class="skill-icon" src="https://img.icons8.com/color/20/microsoft-excel-2019--v1.png"/>Advanced Excel</span>
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#f59e0b" height="20" rx="3" width="20"></rect><text fill="white" font-family="sans-serif" font-size="7.5" font-weight="700" x="2" y="14">KPI</text></svg>KPI Reporting</span>
+<span class="skill-tag"><svg class="skill-icon" height="16" viewbox="0 0 20 20" width="16"><rect fill="#10b981" height="20" rx="3" width="20"></rect><text fill="white" font-family="sans-serif" font-size="7.5" font-weight="700" x="2" y="14">SLA</text></svg>SLA Management</span>
+<span class="skill-tag"><img alt="" class="skill-icon" src="https://img.icons8.com/ios-filled/18/24292e/github.png"/>Git &amp; GitHub</span>
+</div>
+</div>
+</div>
+</section>
+<section class="featured" id="featured">
+<div class="section-eyebrow">Featured Work</div>
+<h2 class="section-title">Three projects. Three different problems.</h2>
+<p class="section-sub">Each built end-to-end — from raw data to insight to decision.</p>
+<div class="featured-grid">
+<div class="featured-card gold">
+<span class="featured-badge badge-gold">✈️ Enterprise BI</span>
+<h3>U.S. Airline Performance &amp; Delay Analysis</h3>
+<div class="featured-tools">Power BI · DAX · PostgreSQL · SQL · 1M+ Flight Records</div>
+<div class="case-study">
+<div class="case-row"><span class="case-label">Problem</span><span class="case-val">The U.S. airline industry operates below the 80% on-time performance benchmark — but no one could see which carriers and airports were the root cause.</span></div>
+<div class="case-row"><span class="case-label">Analysis</span><span class="case-val">Analysed 1M+ flight records across 14 airlines and 315 airports using Power BI and DAX — 6 KPI views across 3 dashboard pages covering delay categories, carrier rankings, and airport congestion.</span></div>
+<div class="case-row"><span class="case-label">Insight</span><span class="case-val"><strong>Weather causes only 5.44% of delays — carrier and late aircraft issues drive 70%.</strong> Alaska leads at 87% on-time; Frontier trails at 63%.</span></div>
+<div class="case-row"><span class="case-label">Impact</span><span class="case-val">Decision-ready dashboard surfacing delay root causes by carrier and airport — directly applicable to operations review, scheduling, and resource allocation decisions.</span></div>
+</div>
+<div class="featured-metrics">
+<div class="f-metric"><div class="f-metric-val">1M+</div><div class="f-metric-label">Flights</div></div>
+<div class="f-metric"><div class="f-metric-val">14</div><div class="f-metric-label">Airlines</div></div>
+<div class="f-metric"><div class="f-metric-val">315</div><div class="f-metric-label">Airports</div></div>
+</div>
+<div class="featured-links">
+<a class="feat-link feat-link-primary" href="https://github.com/RajuKumar31/US-Airline-Performance-Analysis" target="_blank">View Project →</a>
+</div>
+</div>
+<div class="featured-card blue">
+<span class="featured-badge badge-blue">📊 Predictive Analytics</span>
+<h3>Real Estate Investment Advisor — ML App</h3>
+<div class="featured-tools">Python · XGBoost · Scikit-learn · MLflow · Streamlit · 250K Records</div>
+<div class="case-study">
+<div class="case-row"><span class="case-label">Problem</span><span class="case-val">Real estate investors need a systematic way to evaluate 250,000 properties — manual analysis is impossible at scale.</span></div>
+<div class="case-row"><span class="case-label">Analysis</span><span class="case-val">End-to-end ML pipeline — cleaning, 5 engineered features, Random Forest classifier + XGBoost regressor, tracked in MLflow. Deployed as live Streamlit app.</span></div>
+<div class="case-row"><span class="case-label">Insight</span><span class="case-val"><strong>Amenity Count and Price relative to city median</strong> are the two strongest investment signals — factors that operational analysis alone would miss at scale.</span></div>
+<div class="case-row"><span class="case-label">Impact</span><span class="case-val">Live app gives instant investment verdict + 5-year price forecast for any Indian property — removing subjectivity from investment decisions.</span></div>
+</div>
+<div class="featured-metrics">
+<div class="f-metric"><div class="f-metric-val">250K</div><div class="f-metric-label">Records</div></div>
+<div class="f-metric"><div class="f-metric-val">5</div><div class="f-metric-label">Engineered Features</div></div>
+<div class="f-metric"><div class="f-metric-val">Live</div><div class="f-metric-label">Deployed App</div></div>
+</div>
+<div class="featured-links">
+<a class="feat-link feat-link-primary" href="https://real-estate-investment-advisor-yxpgoauov5vn9pozuehhgj.streamlit.app/" target="_blank">Live App →</a>
+<a class="feat-link feat-link-ghost" href="https://github.com/RajuKumar31/Real-Estate-Investment-Advisor" target="_blank">GitHub →</a>
+</div>
+</div>
+<div class="featured-card green">
+<span class="featured-badge badge-green">⚙️ Operations BI</span>
+<h3>KPI &amp; SLA Operations Dashboard</h3>
+<div class="featured-tools">Power BI · DAX · PostgreSQL · Star Schema · 10,000+ Records</div>
+<div class="case-study">
+<div class="case-row"><span class="case-label">Problem</span><span class="case-val">Operations managers needed real-time KPI and SLA breach visibility — manual Excel reporting took hours and was always outdated.</span></div>
+<div class="case-row"><span class="case-label">Analysis</span><span class="case-val">Designed star schema in PostgreSQL, extracted and cleaned data, built 3 Power BI pages with DAX measures for KPI scoring, SLA breach rates, and period-over-period trends.</span></div>
+<div class="case-row"><span class="case-label">Insight</span><span class="case-val"><strong>Before → After:</strong> Manual Excel reporting (hours) → automated multi-page dashboard (real-time). SLA breaches surface in seconds, not end-of-week.</span></div>
+<div class="case-row"><span class="case-label">Impact</span><span class="case-val">Significantly reduced manual reporting dependency, giving managers a single source of truth across 10,000+ records — built from 7 years of knowing exactly what operations teams need.</span></div>
+</div>
+<div class="featured-metrics">
+<div class="f-metric"><div class="f-metric-val">10K+</div><div class="f-metric-label">Records</div></div>
+<div class="f-metric"><div class="f-metric-val">3</div><div class="f-metric-label">Dashboard Pages</div></div>
+<div class="f-metric"><div class="f-metric-val">↓</div><div class="f-metric-label">Manual Reporting</div></div>
+</div>
+<div class="featured-links">
+<a class="feat-link feat-link-primary" href="https://github.com/RajuKumar31/KPI-SLA-Operations-Analytics" target="_blank">View Project →</a>
+</div>
+</div>
+</div>
+</section>
+<section class="projects" id="projects">
+<div class="section-eyebrow">All Projects</div>
+<h2 class="section-title">Selected Analytics Projects</h2>
+<p class="section-sub">Grouped by tool. Each built end-to-end on real datasets.</p>
+<div class="proj-group">
+<div class="proj-group-header"><span class="proj-group-icon">📊</span><span class="proj-group-title">Power BI</span><span class="proj-group-count">2 projects</span></div>
+<div class="proj-grid">
 
-  <nav>
-    <a href="#" class="nav-logo">RK</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#featured">Featured</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="mailto:rajukumarsam4@gmail.com" class="nav-cta">Hire Me</a>
-  </nav>
+<div class="proj-card">
+<div class="proj-card-top"><div class="proj-num">Power BI · 01</div><h3>U.S. Airline Performance &amp; Delay Analysis</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">SQL</span></div></div>
+<div class="proj-card-body">
+<div class="proj-problem">The Problem</div>
+<p class="proj-desc">The U.S. airline industry operates below the 80% on-time performance benchmark. Analysed 1M+ flight records across 14 airlines and 315 airports to identify root causes of delays, rank airline performance, and surface airport congestion hotspots.</p>
+<div class="proj-impact">💡 Weather causes only 5.44% of delays — carrier and late aircraft issues drive 70%. Alaska leads at 87% OTP; Frontier trails at 63%.</div>
+<div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">1M+</div><div class="p-metric-label">Flights</div></div><div class="f-metric"><div class="p-metric-val">14</div><div class="p-metric-label">Airlines</div></div><div class="f-metric"><div class="p-metric-val">315</div><div class="p-metric-label">Airports</div></div></div>
+<div class="proj-links"><a href="https://github.com/RajuKumar31/US-Airline-Performance-Analysis" target="_blank" class="proj-link-btn">GitHub →</a></div>
+</div>
+</div>
 
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid">
-      <div class="hero-content">
-        <span class="hero-eyebrow">📍 Bengaluru · Open to Chennai, Hyderabad, Kerala, Pune & Goa</span>
-        <div class="hero-name">Raju Kumar S</div>
-        <h1>Turning <em>operations</em> data into decisions.</h1>
-        <div class="hero-position">Data Analyst · Operations & Quality Specialist</div>
-        <p class="hero-statement"><strong>7+ years in operations. 12 projects. Zero guesswork.</strong><br>I transform messy operational data into dashboards, models, and insights that help teams make faster, smarter decisions — combining deep business context with hands-on analytics.</p>
-        <div class="hero-btns">
-          <a href="#featured" class="btn-primary">See Featured Work</a>
-          <a href="#contact" class="btn-outline">Get In Touch</a>
-          <a href="resume.pdf" download class="btn-resume">⬇ Download Resume</a>
-        </div>
+<div class="proj-card">
+<div class="proj-card-top"><div class="proj-num">Power BI · 02</div><h3>KPI &amp; SLA Operations Dashboard</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">Star Schema</span></div></div>
+<div class="proj-card-body">
+<div class="proj-problem">The Problem</div>
+<p class="proj-desc">Manual Excel reporting couldn't surface SLA breaches in real time. Built star schema in PostgreSQL, extracted and modelled data, and delivered 3 Power BI pages for KPI scoring, SLA breach rates, and trend analysis.</p>
+<div class="proj-impact">💡 Replaced hours of manual Excel reporting with a real-time dashboard — SLA breaches surface in seconds, not end-of-week</div>
+<div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">10K+</div><div class="p-metric-label">Records</div></div><div class="f-metric"><div class="p-metric-val">3</div><div class="p-metric-label">Pages</div></div></div>
+<div class="proj-links"><a class="proj-link-btn" href="https://github.com/RajuKumar31/KPI-SLA-Operations-Analytics" target="_blank">GitHub →</a></div>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+<div class="proj-group">
+<div class="proj-group-header"><span class="proj-group-icon">📈</span><span class="proj-group-title">Tableau</span><span class="proj-group-count">3 projects</span></div>
+<div class="proj-grid">
+<div class="proj-card">
+<div class="proj-card-top"><div class="proj-num">Tableau · 01</div><h3>US County Health Dashboard</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">Geospatial</span><span class="proj-tag">Healthcare</span></div></div>
+<div class="proj-card-body">
+<div class="proj-problem">The Problem</div>
+<p class="proj-desc">Identify geographic clusters of health risk across 3,190+ US counties to guide resource allocation. Built 4 interconnected Tableau views — poverty bar chart, FIPS county map, poverty vs inactivity scatter, STI rate ranking.</p>
+<div class="proj-impact">💡 Deep South dominates both poverty &amp; STI rankings — systemic failures. 5 healthcare strategy recommendations surfaced.</div>
+<div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">3,190+</div><div class="p-metric-label">Counties</div></div><div class="f-metric"><div class="p-metric-val">51</div><div class="p-metric-label">States</div></div></div>
+<div class="proj-links"><a class="proj-link-btn" href="https://public.tableau.com/app/profile/raju.kumar.s1115/viz/USCountyHealthDashboard/USCountyHealthDashboard" target="_blank">Live Dashboard →</a></div>
+</div>
+</div>
+<div class="proj-card">
+<div class="proj-card-top"><div class="proj-num">Tableau · 02</div><h3>Airbnb NYC Market Analysis</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">EDA</span><span class="proj-tag">Geospatial</span></div></div>
+<div class="proj-card-body">
+<div class="proj-problem">The Problem</div>
+<p class="proj-desc">Uncover pricing trends, host concentration, and demand patterns across 5 NYC boroughs using 30,478 listings and 366,307 reviews. Built geographic maps, scatter plots, and borough comparison charts.</p>
+<div class="proj-impact">💡 Clear pricing disparities across boroughs — high-review host clusters reveal demand hotspots for hospitality investment</div>
+<div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">30K+</div><div class="p-metric-label">Listings</div></div><div class="f-metric"><div class="p-metric-val">366K+</div><div class="p-metric-label">Reviews</div></div></div>
+<div class="proj-links"><a class="proj-link-btn" href="https://github.com/RajuKumar31/Airbnb-NYC-Tableau-Analysis" target="_blank">GitHub →</a></div>
+</div>
+</div>
+<div class="proj-card">
+<div class="proj-card-top"><div class="proj-num">Tableau · 03</div><h3>Online Retail Revenue &amp; Customer Insights</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">Customer Analytics</span><span class="proj-tag">Revenue</span></div></div>
+<div class="proj-card-body">
+<div class="proj-problem">The Problem</div>
+<p class="proj-desc">Answer CEO and CMO-level questions on revenue trends and customer value from 541K+ UCI Online Retail transactions across 38 countries. Built 4 executive visuals as part of Tata Forage simulation.</p>
+<div class="proj-impact">💡 Delivered findings in a 5-min client-facing presentation format — simulating real analyst engagement</div>
+<div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">541K+</div><div class="p-metric-label">Transactions</div></div><div class="f-metric"><div class="p-metric-val">38</div><div class="p-metric-label">Countries</div></div></div>
+<div class="proj-links">
+<a class="proj-link-btn" href="https://public.tableau.com/app/profile/raju.kumar.s1115/viz/OnlineRetailRevenueCustomerInsightsDashboard/OnlineRetailRevenueCustomerInsightsDashboard" target="_blank">Live →</a>
+<a class="proj-link-btn" href="https://github.com/RajuKumar31/Online-Retail-Business-Dashboard" target="_blank">GitHub →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="proj-group">
+<div class="proj-group-header"><span class="proj-group-icon">🐍</span><span class="proj-group-title">Python &amp; Analytics</span><span class="proj-group-count">1 project</span></div>
+<div class="proj-grid">
+<div class="proj-card">
+<div class="proj-card-top"><div class="proj-num">Python · 01</div><h3>Real Estate Investment Advisor — ML App</h3><div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">XGBoost</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">MLflow</span><span class="proj-tag">Streamlit</span></div></div>
+<div class="proj-card-body">
+<div class="proj-problem">The Problem</div>
+<p class="proj-desc">Scale property investment evaluation across 250,000 records using ML. End-to-end pipeline — cleaning, feature engineering, Random Forest classifier + XGBoost regressor, MLflow tracking, deployed as live Streamlit app.</p>
+<div class="proj-impact">💡 End-to-end ML pipeline — feature engineering, model selection, MLflow tracking — deployed as a live production app</div>
+<div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">250K</div><div class="p-metric-label">Records</div></div><div class="f-metric"><div class="p-metric-val">Live</div><div class="p-metric-label">Deployed App</div></div></div>
+<div class="proj-links">
+<a class="proj-link-btn" href="https://real-estate-investment-advisor-yxpgoauov5vn9pozuehhgj.streamlit.app/" target="_blank">Live App →</a>
+<a class="proj-link-btn" href="https://github.com/RajuKumar31/Real-Estate-Investment-Advisor" target="_blank">GitHub →</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="proj-group">
+<div class="proj-group-header"><span class="proj-group-icon">🗄️</span><span class="proj-group-title">SQL</span><span class="proj-group-count">1 project</span></div>
+<div class="proj-grid">
+<div class="proj-card">
+<div class="proj-card-top"><div class="proj-num">SQL · 01</div><h3>Operational KPI Analysis — SQL &amp; PostgreSQL</h3><div class="proj-tags"><span class="proj-tag">PostgreSQL</span><span class="proj-tag">CTEs</span><span class="proj-tag">Window Functions</span><span class="proj-tag">Aggregations</span><span class="proj-tag">Joins</span></div></div>
+<div class="proj-card-body">
+<div class="proj-problem">The Problem</div>
+<p class="proj-desc">The raw operational data behind the KPI &amp; SLA dashboard needed to be extracted, cleaned, and structured entirely in SQL before Power BI could visualise it. This covers the full SQL layer — schema design, data loading, and analytical queries powering the dashboard.</p>
+<div class="proj-impact">💡 Demonstrates CTEs for multi-step aggregations, window functions for period-over-period SLA tracking, and star schema joins across fact and dimension tables</div>
+<div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">Star</div><div class="p-metric-label">Schema Design</div></div><div class="f-metric"><div class="p-metric-val">CTEs</div><div class="p-metric-label">+ Window Fns</div></div><div class="f-metric"><div class="p-metric-val">10K+</div><div class="p-metric-label">Records</div></div></div>
+<div class="proj-links"><a href="https://github.com/RajuKumar31/KPI-SLA-Operations-Analytics" target="_blank" class="proj-link-btn">GitHub →</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="proj-group">
+<div class="proj-group-header"><span class="proj-group-icon">📋</span><span class="proj-group-title">Excel</span><span class="proj-group-count">1 project</span></div>
+<div class="proj-grid">
+<div class="proj-card">
+<div class="proj-card-top"><div class="proj-num">Excel · 01</div><h3>E-Commerce Sales Dashboard</h3><div class="proj-tags"><span class="proj-tag">Excel</span><span class="proj-tag">Pivot Tables</span><span class="proj-tag">Data Modeling</span></div></div>
+<div class="proj-card-body">
+<div class="proj-problem">The Problem</div>
+<p class="proj-desc">Analyze 2016–2018 e-commerce performance across $15.8M revenue, 113K orders, and 89K customers using Excel-only tools. Built with Pivot Tables and Master Data modeling — no BI tool required.</p>
+<div class="proj-impact">💡 Credit card dominates at ~77% of payments · Top 15 product categories and top 5 states identified for revenue focus</div>
+<div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">$15.8M</div><div class="p-metric-label">Revenue</div></div><div class="f-metric"><div class="p-metric-val">113K</div><div class="p-metric-label">Orders</div></div></div>
+<div class="proj-links"><a class="proj-link-btn" href="https://github.com/RajuKumar31/E-Commerce-Sales-Dashboard-Excel" target="_blank">GitHub →</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="experience" id="experience">
+<div class="section-eyebrow">Work History</div>
+<h2 class="section-title">7+ years building operational muscle.</h2>
+<p class="section-sub">Every operations role sharpened the same skill — turning process data into decisions.</p>
+<div class="exp-timeline">
+<div class="exp-item">
+<div class="exp-dot"></div>
+<div class="exp-date">April 2026 – Present</div>
+<h3>Data Analyst Intern</h3>
+<div class="exp-company">LabMentix</div>
+<ul>
+<li>Built a Dubai Real Estate Intelligence Dashboard in Power BI on a 50,000-row housing dataset, developing DAX measures for price-per-sqft, property age segmentation, and listing categorisation to surface pricing trends and investment signals.</li>
+<li>Transformed raw transactional data using Power Query and DAX calculated columns, producing two structured dashboards covering market overview and investment analysis for stakeholder reporting.</li>
+<li>Delivered a full analytics package including a .pbix file, insights report, and recorded walkthrough — replicating a real client-facing BI delivery workflow end to end.</li>
+</ul>
+</div>
+<div class="exp-item">
+<div class="exp-dot"></div>
+<div class="exp-date">July 2024 – August 2025</div>
+<h3>Client Servicing &amp; Operations Manager</h3>
+<div class="exp-company">Xarm Experiential</div>
+<ul>
+<li>Managed end-to-end client servicing and operations across 8–10 simultaneous live experiential events, overseeing project execution from planning to delivery.</li>
+<li>Built structured Excel-based trackers covering budgets, vendor milestones, and client deliverables; weekly ops reviews flagged risks 48 hours in advance.</li>
+<li>Consistently delivered projects within approved budget ranges across ₹10–25 lakh per-project budgets, maintaining strong SLA adherence throughout a 14-month tenure.</li>
+<li>Streamlined cross-functional coordination between 3+ internal teams per event, standardising escalation protocols to cut vendor response time.</li>
+</ul>
+</div>
+<div class="exp-item">
+<div class="exp-dot"></div>
+<div class="exp-date">December 2021 – June 2024</div>
+<h3>Subject Matter Expert</h3>
+<div class="exp-company">First American India</div>
+<ul>
+<li>Owned quality oversight and SLA reporting for a team of 10+ associates processing title and settlement records across all shifts.</li>
+<li>Designed KPI and SLA scorecards in Excel tracking 5+ key metrics per associate — accuracy rate, turnaround time, volume throughput — with weekly root cause analysis.</li>
+<li>Trained and mentored 20+ junior associates, contributing to measurable error reduction within 2 quarters of coaching rollout.</li>
+<li>Scorecard framework adopted as the standard reporting tool across the broader operations team, maintaining high SLA adherence across all reporting cycles.</li>
+</ul>
+</div>
+<div class="exp-item">
+<div class="exp-dot"></div>
+<div class="exp-date">January 2018 – November 2021</div>
+<h3>Process Associate → Senior Process Associate</h3>
+<div class="exp-company">First American India</div>
+<ul>
+<li>Processed and validated 100+ titles and settlement records daily, maintaining above-benchmark accuracy across a 4-year tenure.</li>
+<li>Built personal Excel tracking sheets for daily output, turnaround time, and error rate — used data to self-correct and stay within SLA thresholds.</li>
+<li>Proactively flagged and resolved discrepancies, reducing rework instances and contributing to smoother team throughput.</li>
+<li>Progressed from Process Associate to Senior Process Associate in 2 years, then to Subject Matter Expert — a 3-tier promotion driven by consistent above-benchmark output across 6.5 years.</li>
+</ul>
+</div>
+</div>
+</section>
+
+  <section id="value" style="background: var(--navy); padding: 5rem 5%;">
+    <div class="section-eyebrow" style="color:#93c5fd;">What I Bring</div>
+    <h2 class="section-title" style="color:white;">Not a fresher with tutorials.</h2>
+    <p class="section-sub" style="color:#94a3b8;">7 years of operational experience means I understand the business problems before I open a single tool.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;margin-top:1rem;">
+      <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.6rem;">
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">🏭</div>
+        <h4 style="color:white;font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">7+ Years in Operations</h4>
+        <p style="color:#94a3b8;font-size:0.85rem;line-height:1.6;">Built and maintained KPI/SLA reporting systems in real business environments — not simulated datasets.</p>
       </div>
-      <div class="hero-right">
-        <div class="stat-card"><span class="stat-icon">📅</span><div><div class="stat-num">7+</div><div class="stat-label">Years in Operations & Analytics</div></div></div>
-        <div class="stat-card"><span class="stat-icon">📊</span><div><div class="stat-num">12</div><div class="stat-label">End-to-End Projects Built</div></div></div>
-        <div class="stat-card"><span class="stat-icon">🗄️</span><div><div class="stat-num">1M+</div><div class="stat-label">Records Analyzed Across Projects</div></div></div>
-        <div class="stat-card"><span class="stat-icon">🛠️</span><div><div class="stat-num">5</div><div class="stat-label">Tools: Power BI · SQL · Tableau · Python · Excel</div></div></div>
+      <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.6rem;">
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">🤝</div>
+        <h4 style="color:white;font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">Stakeholder-Facing Communication</h4>
+        <p style="color:#94a3b8;font-size:0.85rem;line-height:1.6;">Presented performance data in weekly ops reviews and client meetings — comfortable translating numbers into decisions for non-technical audiences.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="positioning" id="about">
-    <div class="pos-grid">
-      <div class="pos-text">
-        <div class="section-eyebrow">About Me</div>
-        <h2 class="section-title">Business thinking first. Tools second.</h2>
-        <p>Most dashboards get built and then ignored. The real problem isn't the chart. It's that it doesn't connect to how the business actually operates. That's the gap I spent 7+ years living in, and the problem I now solve through data analytics.</p>
-        <p>My career started in operations, quality assurance, and client servicing. At First American India, I processed and audited 100+ records daily, designed SLA and KPI scorecards in Excel, and supported performance reviews across teams. I wasn't just completing processes — I was asking questions like "Why is accuracy dropping on a specific shift?" and building the reporting framework to find the answer.</p>
-        <p>That curiosity led me into Data Analytics.</p>
-        <div class="highlight">"Today, my work spans Power BI, SQL, Python, Tableau, Advanced Excel, and data modeling. Recent projects include a real estate ML solution built on 250K+ records with 99.73% prediction accuracy and a live Streamlit app; Power BI dashboards on 50K+ housing transactions covering pricing trends and investment signals; and KPI & SLA operations dashboards using PostgreSQL and Star Schema — replicating and scaling the exact reporting work I did on the ground."</div>
-        <p>What makes me different: I understand both the business processes generating the data and the analytics required to improve them. I'm open to Data Analyst, MIS Analyst, Business Analyst, and BI Analyst roles — particularly in insurance, fintech, logistics, real estate, and customer operations.</p>
+      <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.6rem;">
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">🔍</div>
+        <h4 style="color:white;font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">Root Cause Thinking</h4>
+        <p style="color:#94a3b8;font-size:0.85rem;line-height:1.6;">Ran weekly error pattern reviews that reduced recurring issues within two quarters — the same approach I apply to data quality and dashboard design.</p>
       </div>
-      <div class="pos-cards">
-        <div class="pos-card"><div class="pos-card-icon">🎓</div><div><h4>Education</h4><p>B.Com (Finance), Dayananda Sagar Institutions, 2017</p></div></div>
-        <div class="pos-card"><div class="pos-card-icon">🏦</div><div><h4>Domain Expertise</h4><p>US Mortgage Operations, Quality Assurance, Event Management, SLA Reporting</p></div></div>
-        <div class="pos-card"><div class="pos-card-icon">🎯</div><div><h4>What I Solve</h4><p>Turning manual, Excel-based reporting into automated dashboards that reduce effort and surface decisions faster</p></div></div>
-        <div class="pos-card"><div class="pos-card-icon">📍</div><div><h4>Target Roles</h4><p>Data Analyst · Business Analyst · MIS Analyst · Reporting Analyst — Entry to Associate level</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="section-eyebrow">Technical Skills</div>
-    <h2 class="section-title">Tools &amp; Technologies</h2>
-    <p class="section-sub">All skills built through independent projects and certified coursework — not just tutorials.</p>
-    <div class="skills-categories">
-
-      <div class="skill-cat">
-        <div class="skill-cat-title">📊 BI &amp; Visualization</div>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://img.icons8.com/color/20/power-bi.png" alt="" class="skill-icon">Power BI</span>
-          <span class="skill-tag"><img src="https://img.icons8.com/color/20/tableau-software.png" alt="" class="skill-icon">Tableau</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#F2C811"/><text x="1.5" y="14" font-size="8.5" font-weight="800" fill="#1a1a1a" font-family="sans-serif">DAX</text></svg>DAX</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#217346"/><text x="2" y="14" font-size="8.5" font-weight="700" fill="white" font-family="sans-serif">PQ</text></svg>Power Query</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#2563eb"/><polygon points="10,3 17,7.5 17,16 10,19 3,16 3,7.5" fill="none" stroke="white" stroke-width="1.5"/><line x1="10" y1="3" x2="10" y2="19" stroke="white" stroke-width="1"/><line x1="3" y1="7.5" x2="17" y2="7.5" stroke="white" stroke-width="1"/></svg>Star Schema</span>
-        </div>
-      </div>
-
-      <div class="skill-cat">
-        <div class="skill-cat-title">🗄️ Data &amp; Databases</div>
-        <div class="skill-tags">
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#2563eb"/><text x="3" y="14" font-size="9" font-weight="800" fill="white" font-family="sans-serif">SQL</text></svg>SQL</span>
-          <span class="skill-tag"><img src="https://img.icons8.com/color/20/postgreesql.png" alt="" class="skill-icon">PostgreSQL</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#7c3aed"/><text x="2" y="14" font-size="8" font-weight="700" fill="white" font-family="sans-serif">DM</text></svg>Data Modelling</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#0891b2"/><text x="2.5" y="14" font-size="8" font-weight="700" fill="white" font-family="sans-serif">DC</text></svg>Data Cleaning</span>
-        </div>
-      </div>
-
-      <div class="skill-cat">
-        <div class="skill-cat-title">🐍 Python &amp; ML</div>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://img.icons8.com/color/20/python--v1.png" alt="" class="skill-icon">Python</span>
-          <span class="skill-tag"><img src="https://img.icons8.com/color/20/pandas.png" alt="" class="skill-icon">Pandas</span>
-          <span class="skill-tag"><img src="https://img.icons8.com/color/20/numpy.png" alt="" class="skill-icon">NumPy</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#f97316"/><text x="1.5" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">SKL</text></svg>Scikit-learn</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#e35d1b"/><text x="1.5" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">XGB</text></svg>XGBoost</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#0194e2"/><text x="1.5" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">MLf</text></svg>MLflow</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#ff4b4b"/><text x="2" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">ST</text></svg>Streamlit</span>
-        </div>
-      </div>
-
-      <div class="skill-cat">
-        <div class="skill-cat-title">📋 Operations &amp; Workflow</div>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://img.icons8.com/color/20/microsoft-excel-2019--v1.png" alt="" class="skill-icon">Advanced Excel</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#f59e0b"/><text x="2" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">KPI</text></svg>KPI Reporting</span>
-          <span class="skill-tag"><svg class="skill-icon" viewBox="0 0 20 20" width="16" height="16"><rect width="20" height="20" rx="3" fill="#10b981"/><text x="2" y="14" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">SLA</text></svg>SLA Management</span>
-          <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/18/24292e/github.png" alt="" class="skill-icon">Git &amp; GitHub</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="featured" id="featured">
-    <div class="section-eyebrow">Featured Work</div>
-    <h2 class="section-title">Three projects. Three different problems.</h2>
-    <p class="section-sub">Each built end-to-end — from raw data to insight to decision.</p>
-    <div class="featured-grid">
-
-      <div class="featured-card gold">
-        <span class="featured-badge badge-gold">🏥 Healthcare Analytics</span>
-        <h3>US County Health Insights Dashboard</h3>
-        <div class="featured-tools">Tableau · Excel · 3,190+ Counties · 51 States</div>
-        <div class="case-study">
-          <div class="case-row"><span class="case-label">Problem</span><span class="case-val">Public health data across 3,190+ US counties is too complex for stakeholders to interpret without structure and visualization.</span></div>
-          <div class="case-row"><span class="case-label">Analysis</span><span class="case-val">4 interconnected Tableau views — poverty bar chart, FIPS-matched county map, poverty vs inactivity scatter, STI rate ranking — across 51 states.</span></div>
-          <div class="case-row"><span class="case-label">Insight</span><span class="case-val"><strong>Deep South states dominate both poverty and STI rankings</strong> — systemic failure, not coincidence. Triple-risk counties cluster in Southeast corridor.</span></div>
-          <div class="case-row"><span class="case-label">Impact</span><span class="case-val">5 actionable healthcare strategy recommendations — telehealth investment priorities, risk-adjusted funding advocacy for Appalachian corridor.</span></div>
-        </div>
-        <div class="featured-metrics">
-          <div class="f-metric"><div class="f-metric-val">3,190+</div><div class="f-metric-label">Counties</div></div>
-          <div class="f-metric"><div class="f-metric-val">51</div><div class="f-metric-label">States</div></div>
-          <div class="f-metric"><div class="f-metric-val">5</div><div class="f-metric-label">Health Indicators</div></div>
-        </div>
-        <div class="featured-links">
-          <a href="https://public.tableau.com/app/profile/raju.kumar.s1115/viz/USCountyHealthDashboard/USCountyHealthDashboard" target="_blank" class="feat-link feat-link-primary">Live Dashboard →</a>
-          <a href="https://github.com/RajuKumar31" target="_blank" class="feat-link feat-link-ghost">GitHub →</a>
-        </div>
-      </div>
-
-      <div class="featured-card blue">
-        <span class="featured-badge badge-blue">🤖 Machine Learning</span>
-        <h3>Real Estate Investment Advisor — ML App</h3>
-        <div class="featured-tools">Python · XGBoost · Scikit-learn · MLflow · Streamlit · 250K Records</div>
-        <div class="case-study">
-          <div class="case-row"><span class="case-label">Problem</span><span class="case-val">Real estate investors need a systematic way to evaluate 250,000 properties — manual analysis is impossible at scale.</span></div>
-          <div class="case-row"><span class="case-label">Analysis</span><span class="case-val">End-to-end ML pipeline — cleaning, 5 engineered features, Random Forest classifier + XGBoost regressor, tracked in MLflow. Deployed as live Streamlit app.</span></div>
-          <div class="case-row"><span class="case-label">Insight</span><span class="case-val"><strong>Amenity Count and Price relative to city median</strong> are the two strongest investment signals — property type adds almost no predictive value.</span></div>
-          <div class="case-row"><span class="case-label">Impact</span><span class="case-val">Live app gives instant investment verdict + 5-year price forecast for any Indian property — removing subjectivity from investment decisions.</span></div>
-        </div>
-        <div class="featured-metrics">
-          <div class="f-metric"><div class="f-metric-val">99.73%</div><div class="f-metric-label">Accuracy</div></div>
-          <div class="f-metric"><div class="f-metric-val">0.9999</div><div class="f-metric-label">R²</div></div>
-          <div class="f-metric"><div class="f-metric-val">250K</div><div class="f-metric-label">Records</div></div>
-        </div>
-        <div class="featured-links">
-          <a href="https://real-estate-investment-advisor-yxpgoauov5vn9pozuehhgj.streamlit.app/" target="_blank" class="feat-link feat-link-primary">Live App →</a>
-          <a href="https://github.com/RajuKumar31/Real-Estate-Investment-Advisor" target="_blank" class="feat-link feat-link-ghost">GitHub →</a>
-        </div>
-      </div>
-
-      <div class="featured-card green">
-        <span class="featured-badge badge-green">⚙️ Operations BI</span>
-        <h3>KPI & SLA Operations Dashboard</h3>
-        <div class="featured-tools">Power BI · DAX · PostgreSQL · Star Schema · 10,000+ Records</div>
-        <div class="case-study">
-          <div class="case-row"><span class="case-label">Problem</span><span class="case-val">Operations managers needed real-time KPI and SLA breach visibility — manual Excel reporting took hours and was always outdated.</span></div>
-          <div class="case-row"><span class="case-label">Analysis</span><span class="case-val">Designed star schema in PostgreSQL, extracted and cleaned data, built 3 Power BI pages with DAX measures for KPI scoring, SLA breach rates, and period-over-period trends.</span></div>
-          <div class="case-row"><span class="case-label">Insight</span><span class="case-val"><strong>Before → After:</strong> Manual Excel reporting (hours) → automated multi-page dashboard (real-time). SLA breaches surface in seconds, not end-of-week.</span></div>
-          <div class="case-row"><span class="case-label">Impact</span><span class="case-val">Eliminated manual reporting effort, gave managers a single source of truth across 10,000+ records — built from 7 years of knowing exactly what operations teams need.</span></div>
-        </div>
-        <div class="featured-metrics">
-          <div class="f-metric"><div class="f-metric-val">10K+</div><div class="f-metric-label">Records</div></div>
-          <div class="f-metric"><div class="f-metric-val">3</div><div class="f-metric-label">Dashboard Pages</div></div>
-          <div class="f-metric"><div class="f-metric-val">0</div><div class="f-metric-label">Manual Reports</div></div>
-        </div>
-        <div class="featured-links">
-          <a href="https://github.com/RajuKumar31/KPI-SLA-Operations-Analytics" target="_blank" class="feat-link feat-link-primary">View Project →</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="projects" id="projects">
-    <div class="section-eyebrow">All Projects</div>
-    <h2 class="section-title">12 projects across 5 tools.</h2>
-    <p class="section-sub">Grouped by tool. Each built end-to-end on real datasets.</p>
-
-    <div class="proj-group">
-      <div class="proj-group-header"><span class="proj-group-icon">📊</span><span class="proj-group-title">Power BI</span><span class="proj-group-count">6 projects</span></div>
-      <div class="proj-grid">
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Power BI · 01</div><h3>Real Estate Investment Advisor — Power BI Dashboard</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">Power Query</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Investors needed a way to evaluate 250,000 Indian properties without manual analysis. Built a custom DAX investment scoring algorithm (0–10) classifying each property as Good or Poor Investment across 4 themed dashboard pages.</p>
-            <div class="proj-impact">💡 123,274 good investments identified — poor investments cost 3× more (₹374L vs ₹131L avg)</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">250K</div><div class="p-metric-label">Properties</div></div><div class="f-metric"><div class="p-metric-val">11</div><div class="p-metric-label">DAX Measures</div></div><div class="f-metric"><div class="p-metric-val">4</div><div class="p-metric-label">Pages</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/Real-Estate-Investment-Dashboard" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Power BI · 02</div><h3>KPI & SLA Operations Dashboard</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">Star Schema</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Manual Excel reporting couldn't surface SLA breaches in real time. Built star schema in PostgreSQL, extracted and modelled data, and delivered 3 Power BI pages for KPI scoring, SLA breach rates, and trend analysis.</p>
-            <div class="proj-impact">💡 Before: hours of manual reporting → After: real-time dashboard with instant breach visibility</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">10K+</div><div class="p-metric-label">Records</div></div><div class="f-metric"><div class="p-metric-val">3</div><div class="p-metric-label">Pages</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/KPI-SLA-Operations-Analytics" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Power BI · 03</div><h3>IPL Power BI Analytics Dashboard</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">Data Modeling</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">IPL teams need data-driven squad planning for auctions. Analyzed 6 seasons (2020–2025) of player and team performance to surface consistent performers, team dependencies, and overseas vs Indian contribution patterns.</p>
-            <div class="proj-impact">💡 Overseas players contribute 56.93% of runs — KL Rahul leads all batsmen. Actionable for IPL 2026 auction strategy.</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">41K</div><div class="p-metric-label">Runs</div></div><div class="f-metric"><div class="p-metric-val">1,176</div><div class="p-metric-label">Wickets</div></div><div class="f-metric"><div class="p-metric-val">6</div><div class="p-metric-label">Seasons</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/IPL-PowerBI-Analytics-Dashboard" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Power BI · 04</div><h3>Global Economic Impact of Wars</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">AI Decomposition</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Quantify how wars affect economies across GDP, inflation, unemployment, and poverty. Built a custom Economic Impact Score using weighted DAX metrics, with AI decomposition tree for root cause analysis across 100K+ records.</p>
-            <div class="proj-impact">💡 High inflation + GDP decline = most severe impact. War intensity alone does not determine economic damage.</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">100K+</div><div class="p-metric-label">Records</div></div><div class="f-metric"><div class="p-metric-val">AI</div><div class="p-metric-label">Decomposition</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/Global-Economic-Impact-of-Wars" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Power BI · 05</div><h3>ShopNest Executive Sales Dashboard</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">Sales Analytics</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Leadership needed a single executive view across $15.7M revenue and 97K+ orders. Built Power BI model with DAX covering revenue, volume, delay rates, and product-level drill-downs with region, category, and time filters.</p>
-            <div class="proj-impact">💡 0.05% order delay rate surfaced as key efficiency metric — gave leadership clear product and regional visibility</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">$15.7M</div><div class="p-metric-label">Revenue</div></div><div class="f-metric"><div class="p-metric-val">97K+</div><div class="p-metric-label">Orders</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/ShopNest-Executive-Sale-s-Operations-Dashboard" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Power BI · 06</div><h3>US County Health Insights Dashboard</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">Star Schema</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Raw US county health data (~300K rows) was too large for meaningful analysis. Reduced to 145K rows, built star schema model, and created interactive Power BI dashboard with KPIs, trend lines, filled map, and top/bottom state comparisons.</p>
-            <div class="proj-impact">💡 Certain states consistently underperform across multiple health metrics — flags areas needing policy intervention</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">145K</div><div class="p-metric-label">Rows (cleaned)</div></div><div class="f-metric"><div class="p-metric-val">Star</div><div class="p-metric-label">Schema</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/US-County-Health-Dashboard" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="proj-group">
-      <div class="proj-group-header"><span class="proj-group-icon">📈</span><span class="proj-group-title">Tableau</span><span class="proj-group-count">3 projects</span></div>
-      <div class="proj-grid">
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Tableau · 01</div><h3>US County Health Dashboard</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">Geospatial</span><span class="proj-tag">Healthcare</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Identify geographic clusters of health risk across 3,190+ US counties to guide resource allocation. Built 4 interconnected Tableau views — poverty bar chart, FIPS county map, poverty vs inactivity scatter, STI rate ranking.</p>
-            <div class="proj-impact">💡 Deep South dominates both poverty & STI rankings — systemic failures. 5 healthcare strategy recommendations surfaced.</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">3,190+</div><div class="p-metric-label">Counties</div></div><div class="f-metric"><div class="p-metric-val">51</div><div class="p-metric-label">States</div></div></div>
-            <div class="proj-links"><a href="https://public.tableau.com/app/profile/raju.kumar.s1115/viz/USCountyHealthDashboard/USCountyHealthDashboard" target="_blank" class="proj-link-btn">Live Dashboard →</a></div>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Tableau · 02</div><h3>Airbnb NYC Market Analysis</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">EDA</span><span class="proj-tag">Geospatial</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Uncover pricing trends, host concentration, and demand patterns across 5 NYC boroughs using 30,478 listings and 366,307 reviews. Built geographic maps, scatter plots, and borough comparison charts.</p>
-            <div class="proj-impact">💡 Clear pricing disparities across boroughs — high-review host clusters reveal demand hotspots for hospitality investment</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">30K+</div><div class="p-metric-label">Listings</div></div><div class="f-metric"><div class="p-metric-val">366K+</div><div class="p-metric-label">Reviews</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/Airbnb-NYC-Tableau-Analysis" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Tableau · 03</div><h3>Online Retail Revenue & Customer Insights</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">Customer Analytics</span><span class="proj-tag">Revenue</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Answer CEO and CMO-level questions on revenue trends and customer value from 541K+ UCI Online Retail transactions across 38 countries. Built 4 executive visuals as part of Tata Forage simulation.</p>
-            <div class="proj-impact">💡 Delivered findings in a 5-min client-facing presentation format — simulating real analyst engagement</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">541K+</div><div class="p-metric-label">Transactions</div></div><div class="f-metric"><div class="p-metric-val">38</div><div class="p-metric-label">Countries</div></div></div>
-            <div class="proj-links">
-              <a href="https://public.tableau.com/app/profile/raju.kumar.s1115/viz/OnlineRetailRevenueCustomerInsightsDashboard/OnlineRetailRevenueCustomerInsightsDashboard" target="_blank" class="proj-link-btn">Live →</a>
-              <a href="https://github.com/RajuKumar31/Online-Retail-Business-Dashboard" target="_blank" class="proj-link-btn">GitHub →</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="proj-group">
-      <div class="proj-group-header"><span class="proj-group-icon">🐍</span><span class="proj-group-title">Python & Machine Learning</span><span class="proj-group-count">2 projects</span></div>
-      <div class="proj-grid">
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Python · 01</div><h3>Real Estate Investment Advisor — ML App</h3><div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">XGBoost</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">MLflow</span><span class="proj-tag">Streamlit</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Scale property investment evaluation across 250,000 records using ML. End-to-end pipeline — cleaning, feature engineering, Random Forest classifier + XGBoost regressor, MLflow tracking, deployed as live Streamlit app.</p>
-            <div class="proj-impact">💡 99.73% classification accuracy · R²=0.9999 on 5-year price forecast · live in production</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">99.73%</div><div class="p-metric-label">Accuracy</div></div><div class="f-metric"><div class="p-metric-val">0.9999</div><div class="p-metric-label">R²</div></div></div>
-            <div class="proj-links">
-              <a href="https://real-estate-investment-advisor-yxpgoauov5vn9pozuehhgj.streamlit.app/" target="_blank" class="proj-link-btn">Live App →</a>
-              <a href="https://github.com/RajuKumar31/Real-Estate-Investment-Advisor" target="_blank" class="proj-link-btn">GitHub →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Python · 02</div><h3>Python Pandas Capstone Project</h3><div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Pandas</span><span class="proj-tag">NumPy</span><span class="proj-tag">Jupyter</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Demonstrate core Python data manipulation on employee project data — missing value handling, dataset merging, conditional transformations, bonus calculations, and cost aggregations across 10 structured tasks.</p>
-            <div class="proj-impact">💡 10 structured data tasks — demonstrates real-world Pandas proficiency beyond tutorial exercises</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">10</div><div class="p-metric-label">Tasks</div></div><div class="f-metric"><div class="p-metric-val">Python</div><div class="p-metric-label">Core Tool</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/Python-Pandas-Capstone-Project" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="proj-group">
-      <div class="proj-group-header"><span class="proj-group-icon">📋</span><span class="proj-group-title">Excel</span><span class="proj-group-count">1 project</span></div>
-      <div class="proj-grid">
-        <div class="proj-card">
-          <div class="proj-card-top"><div class="proj-num">Excel · 01</div><h3>E-Commerce Sales Dashboard</h3><div class="proj-tags"><span class="proj-tag">Excel</span><span class="proj-tag">Pivot Tables</span><span class="proj-tag">Data Modeling</span></div></div>
-          <div class="proj-card-body">
-            <div class="proj-problem">The Problem</div>
-            <p class="proj-desc">Analyze 2016–2018 e-commerce performance across $15.8M revenue, 113K orders, and 89K customers using Excel-only tools. Built with Pivot Tables and Master Data modeling — no BI tool required.</p>
-            <div class="proj-impact">💡 Credit card dominates at ~77% of payments · Top 15 product categories and top 5 states identified for revenue focus</div>
-            <div class="proj-metrics"><div class="f-metric"><div class="p-metric-val">$15.8M</div><div class="p-metric-label">Revenue</div></div><div class="f-metric"><div class="p-metric-val">113K</div><div class="p-metric-label">Orders</div></div></div>
-            <div class="proj-links"><a href="https://github.com/RajuKumar31/E-Commerce-Sales-Dashboard-Excel" target="_blank" class="proj-link-btn">GitHub →</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="experience" id="experience">
-    <div class="section-eyebrow">Work History</div>
-    <h2 class="section-title">7+ years building operational muscle.</h2>
-    <p class="section-sub">Every operations role sharpened the same skill — turning process data into decisions.</p>
-    <div class="exp-timeline">
-      <div class="exp-item">
-        <div class="exp-dot"></div>
-        <div class="exp-date">April 2026 – Present</div>
-        <h3>Data Analyst Intern</h3>
-        <div class="exp-company">Labmentix</div>
-        <ul>
-          <li>Built a Dubai Real Estate Intelligence Dashboard in Power BI on a 50,000-row housing dataset, developing DAX measures for price-per-sqft, property age segmentation, and listing categorization to surface pricing trends and investment signals.</li>
-          <li>Modeled and transformed raw transactional data using Power Query and DAX calculated columns, producing two structured dashboards covering market overview and investment analysis for stakeholder reporting.</li>
-          <li>Delivered a full analytics package including a .pbix file, insights report, and recorded walkthrough — replicating a real client-facing BI delivery workflow end to end.</li>
-        </ul>
-      </div>
-      <div class="exp-item">
-        <div class="exp-dot"></div>
-        <div class="exp-date">July 2024 – August 2025</div>
-        <h3>Client Servicing Manager</h3>
-        <div class="exp-company">Xarm Experiential</div>
-        <ul>
-          <li>Managed operational performance across 8–10 concurrent live events by creating Excel-based tracking systems for budgets, vendor milestones, and client deliverables, achieving zero missed client SLAs over 14 months.</li>
-          <li>Analyzed project risks and operational bottlenecks through weekly ops reviews and escalation tracking, enabling issue resolution 48+ hours before deadlines and eliminating last-minute escalations.</li>
-          <li>Tracked budgets ranging from ₹10–25 lakh per project using structured reporting frameworks, ensuring 100% on-budget delivery across the full 14-month tenure.</li>
-        </ul>
-      </div>
-      <div class="exp-item">
-        <div class="exp-dot"></div>
-        <div class="exp-date">December 2021 – June 2024</div>
-        <h3>Subject Matter Expert</h3>
-        <div class="exp-company">First American India</div>
-        <ul>
-          <li>Maintained 100% SLA compliance throughout a 2.5-year tenure by overseeing quality assurance, performance reporting, and title and settlement record processing operations.</li>
-          <li>Designed Excel-based KPI and SLA scorecards tracking 5+ performance metrics across a 10+ member team, enabling weekly root cause analysis that reduced recurring error categories within two quarters.</li>
-          <li>Trained and mentored 20+ associates on process standards, quality controls, and performance metrics, contributing to measurable accuracy improvements and the adoption of the scorecard framework across the broader operations team.</li>
-        </ul>
-      </div>
-      <div class="exp-item">
-        <div class="exp-dot"></div>
-        <div class="exp-date">January 2018 – November 2021</div>
-        <h3>Process Associate → Senior Process Associate</h3>
-        <div class="exp-company">First American India</div>
-        <ul>
-          <li>Processed and validated 100+ title and settlement records daily while maintaining accuracy above team benchmarks, supporting consistent SLA performance and quality standards.</li>
-          <li>Built Excel-based performance trackers to analyze output, turnaround time (TAT), and error rates, leveraging data to identify improvement opportunities and maintain SLA compliance.</li>
-          <li>Promoted from Process Associate to Senior Process Associate within 2 years, recognized for consistent accuracy, process ownership, and a self-driven approach to performance tracking.</li>
-        </ul>
+      <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.6rem;">
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">🎯</div>
+        <h4 style="color:white;font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">Business Problem First</h4>
+        <p style="color:#94a3b8;font-size:0.85rem;line-height:1.6;">Every project starts with a question, not a tool. I identify what decision needs to be made, then build the analysis to support it.</p>
       </div>
     </div>
   </section>
 
   <section class="certs" id="certifications">
-    <div class="section-eyebrow">Credentials</div>
-    <h2 class="section-title">Certifications</h2>
-    <div class="certs-grid">
-      <div class="cert-card"><div class="cert-icon">🎓</div><div class="cert-info"><h4>Certified Data Analyst</h4><p>SkilloVilla · Apr 2026 · Accredited by FutureSkills (Nasscom) & Wipro · ID: 7B2BYUMF</p></div></div>
-      <div class="cert-card"><div class="cert-icon">💼</div><div class="cert-info"><h4>Technology Consulting Virtual Experience</h4><p>Accenture Australia · Forage · Apr 2026</p></div></div>
-      <div class="cert-card"><div class="cert-icon">📊</div><div class="cert-info"><h4>Data Visualisation Virtual Experience</h4><p>Tata Group · Forage · Apr 2026</p></div></div>
-      <div class="cert-card"><div class="cert-icon">🔍</div><div class="cert-info"><h4>Data Analytics Job Simulation</h4><p>Deloitte Australia · Forage · May 2026</p></div></div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="section-eyebrow">Get In Touch</div>
-    <h2 class="section-title">Let's work together.</h2>
-    <p>Open to entry-level and associate Data Analyst, Business Analyst, MIS Analyst, and Reporting Analyst roles in Bengaluru, Chennai, Hyderabad, Kerala, Pune, and Goa.</p>
-    <div class="contact-links">
-      <a href="mailto:rajukumarsam4@gmail.com" class="contact-link">📧 rajukumarsam4@gmail.com</a>
-      <a href="https://linkedin.com/in/rajukumarsahani/" target="_blank" class="contact-link">💼 LinkedIn</a>
-      <a href="https://github.com/RajuKumar31" target="_blank" class="contact-link">🐙 GitHub</a>
-      <a href="https://public.tableau.com/app/profile/raju.kumar.s1115" target="_blank" class="contact-link">📊 Tableau Public</a>
-    </div>
-  </section>
-
-  <footer><p>© 2026 Raju Kumar S · Data Analyst · Built with HTML & CSS · Deployed on GitHub Pages</p></footer>
-
-
-  <script>
+<div class="section-eyebrow">Credentials</div>
+<h2 class="section-title">Certifications</h2>
+<div class="certs-grid">
+<div class="cert-card"><div class="cert-icon">🎓</div><div class="cert-info"><h4>Certified Data Analyst</h4><p>SkilloVilla · Apr 2026 · Accredited by FutureSkills (Nasscom) &amp; Wipro · ID: 7B2BYUMF</p></div></div>
+<div class="cert-card"><div class="cert-icon">💼</div><div class="cert-info"><h4>Technology Consulting Virtual Experience</h4><p>Accenture Australia · Forage · Apr 2026</p></div></div>
+<div class="cert-card"><div class="cert-icon">📊</div><div class="cert-info"><h4>Data Visualisation Virtual Experience</h4><p>Tata Group · Forage · Apr 2026</p></div></div>
+<div class="cert-card"><div class="cert-icon">🔍</div><div class="cert-info"><h4>Data Analytics Job Simulation</h4><p>Deloitte Australia · Forage · May 2026</p></div></div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="section-eyebrow">Get In Touch</div>
+<h2 class="section-title">Let's work together.</h2>
+<p>Open to entry-level and associate Data Analyst, Business Analyst, MIS Analyst, and Reporting Analyst roles in Bengaluru, Chennai, Hyderabad, Kochi, and Pune.</p>
+<div class="contact-links">
+<a class="contact-link" href="mailto:rajukumarsam4@gmail.com">📧 rajukumarsam4@gmail.com</a>
+<a class="contact-link" href="https://linkedin.com/in/rajukumarsahani/" target="_blank">💼 LinkedIn</a>
+<a class="contact-link" href="https://github.com/RajuKumar31" target="_blank">🐙 GitHub</a>
+<a class="contact-link" href="https://public.tableau.com/app/profile/raju.kumar.s1115" target="_blank">📊 Tableau Public</a>
+</div>
+</section>
+<footer><p>© 2026 Raju Kumar S · Data Analyst · Built with HTML &amp; CSS · Deployed on GitHub Pages</p></footer>
+<script>
     /* ── Scroll Reveal ── */
     const revealEls = document.querySelectorAll('.pos-text, .pos-cards, .skill-cat, .featured-card, .proj-card, .cert-card, .exp-item, .section-eyebrow, .section-title, .section-sub');
     revealEls.forEach((el, i) => {
@@ -686,23 +642,7 @@
       document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 20);
     });
 
-    /* ── Floating Particles ── */
-    const hero = document.querySelector('.hero');
-    const colors = ['rgba(37,99,235,0.4)', 'rgba(245,158,11,0.35)', 'rgba(96,165,250,0.3)', 'rgba(255,255,255,0.15)'];
-    for (let i = 0; i < 18; i++) {
-      const p = document.createElement('div');
-      p.className = 'particle';
-      const size = Math.random() * 5 + 2;
-      p.style.cssText = `
-        width: ${size}px; height: ${size}px;
-        left: ${Math.random() * 100}%;
-        top: ${Math.random() * 100}%;
-        background: ${colors[Math.floor(Math.random() * colors.length)]};
-        animation-duration: ${Math.random() * 12 + 8}s;
-        animation-delay: ${Math.random() * 8}s;
-      `;
-      hero.appendChild(p);
-    }
+    /* Particles removed for cleaner UX */
 
     /* ── Typewriter on hero name ── */
     const nameEl = document.querySelector('.hero-name');
