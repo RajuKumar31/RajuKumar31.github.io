@@ -124,7 +124,33 @@
     .proj-num { font-size: 0.7rem; font-weight: 700; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem; }
     .proj-card h3 { font-family: 'Fraunces', serif; font-size: 1rem; color: var(--text); margin-bottom: 0.6rem; line-height: 1.3; }
     .proj-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-    .proj-tag { background: var(--accent-light); color: var(--accent); font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 50px; }
+    .proj-tag { font-size: 0.7rem; font-weight: 700; padding: 0.22rem 0.6rem; border-radius: 50px; display: inline-block; }
+
+    /* Tool-specific colors */
+    .proj-tag[data-tool="Power BI"]             { background: #fff3cd; color: #92600a; border: 1px solid #fde68a; }
+    .proj-tag[data-tool="DAX"]                  { background: #fff3cd; color: #92600a; border: 1px solid #fde68a; }
+    .proj-tag[data-tool="Tableau"]              { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+    .proj-tag[data-tool="PostgreSQL"]           { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+    .proj-tag[data-tool="SQL"]                  { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+    .proj-tag[data-tool="Python"]               { background: #fef3c7; color: #b45309; border: 1px solid #fcd34d; }
+    .proj-tag[data-tool="Scikit-learn"]         { background: #fff7ed; color: #c2410c; border: 1px solid #fdba74; }
+    .proj-tag[data-tool="KMeans"]               { background: #fdf4ff; color: #7e22ce; border: 1px solid #d8b4fe; }
+    .proj-tag[data-tool="Collaborative Filtering"] { background: #fdf4ff; color: #7e22ce; border: 1px solid #d8b4fe; }
+    .proj-tag[data-tool="Streamlit"]            { background: #fef2f2; color: #b91c1c; border: 1px solid #fca5a5; }
+    .proj-tag[data-tool="XGBoost"]              { background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; }
+    .proj-tag[data-tool="MLflow"]               { background: #f0fdf4; color: #15803d; border: 1px solid #86efac; }
+    .proj-tag[data-tool="Excel"]                { background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; }
+    .proj-tag[data-tool="Geospatial"]           { background: #eff6ff; color: #1d4ed8; border: 1px solid #93c5fd; }
+    .proj-tag[data-tool="Healthcare"]           { background: #fdf2f8; color: #9d174d; border: 1px solid #f9a8d4; }
+    .proj-tag[data-tool="Customer Analytics"]   { background: #fdf4ff; color: #7e22ce; border: 1px solid #d8b4fe; }
+    .proj-tag[data-tool="Revenue"]              { background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; }
+    .proj-tag[data-tool="Star Schema"]          { background: #eff6ff; color: #1d4ed8; border: 1px solid #93c5fd; }
+    .proj-tag[data-tool="CTEs"]                 { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+    .proj-tag[data-tool="Window Functions"]     { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+    .proj-tag[data-tool="Aggregations"]         { background: #f0fdf4; color: #15803d; border: 1px solid #86efac; }
+    .proj-tag[data-tool="Joins"]                { background: #fff7ed; color: #c2410c; border: 1px solid #fdba74; }
+    .proj-tag[data-tool="Pivot Tables"]         { background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; }
+    .proj-tag[data-tool="Data Modeling"]        { background: #fdf4ff; color: #7e22ce; border: 1px solid #d8b4fe; }
     .proj-card-body { padding: 1rem 1.4rem 1.4rem; flex: 1; display: flex; flex-direction: column; }
     .proj-problem { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--grey); margin-bottom: 0.3rem; }
     .proj-desc { font-size: 0.87rem; color: var(--dark-grey); line-height: 1.65; margin-bottom: 0.8rem; flex: 1; }
@@ -399,7 +425,7 @@
 <div class="proj-grid">
 
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Power BI · 01</div><h3>U.S. Airline Performance &amp; Delay Analysis</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">SQL</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Power BI · 01</div><h3>U.S. Airline Performance &amp; Delay Analysis</h3><div class="proj-tags"><span class="proj-tag" data-tool="Power BI">Power BI</span><span class="proj-tag" data-tool="DAX">DAX</span><span class="proj-tag" data-tool="PostgreSQL">PostgreSQL</span><span class="proj-tag" data-tool="SQL">SQL</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">The U.S. airline industry operates below the 80% on-time performance benchmark. Analysed 5.8M flight records across 14 airlines and 322 airports to identify delay root causes, rank carrier performance, and surface airport congestion hotspots.</p>
@@ -410,7 +436,7 @@
 </div>
 
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Power BI · 02</div><h3>Retail Sales &amp; Inventory Intelligence System</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">SQL</span><span class="proj-tag">Excel</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Power BI · 02</div><h3>Retail Sales &amp; Inventory Intelligence System</h3><div class="proj-tags"><span class="proj-tag" data-tool="Power BI">Power BI</span><span class="proj-tag" data-tool="DAX">DAX</span><span class="proj-tag" data-tool="PostgreSQL">PostgreSQL</span><span class="proj-tag" data-tool="SQL">SQL</span><span class="proj-tag" data-tool="Excel">Excel</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">A bicycle retail company with 3 stores and 1,600+ orders had no visibility into why revenue was concentrated, where inventory was failing, and which shipments were at risk.</p>
@@ -421,7 +447,7 @@
 </div>
 
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Power BI · 03</div><h3>KPI &amp; SLA Operations Dashboard</h3><div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">Star Schema</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Power BI · 03</div><h3>KPI &amp; SLA Operations Dashboard</h3><div class="proj-tags"><span class="proj-tag" data-tool="Power BI">Power BI</span><span class="proj-tag" data-tool="DAX">DAX</span><span class="proj-tag" data-tool="PostgreSQL">PostgreSQL</span><span class="proj-tag" data-tool="Star Schema">Star Schema</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">Manual Excel reporting couldn't surface SLA breaches in real time. Built star schema in PostgreSQL, extracted and modelled data, and delivered 3 Power BI pages for KPI scoring, SLA breach rates, and trend analysis.</p>
@@ -440,7 +466,7 @@
 <div class="proj-group-header"><span class="proj-group-icon">📈</span><span class="proj-group-title">Tableau</span><span class="proj-group-count">3 projects</span></div>
 <div class="proj-grid">
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Tableau · 01</div><h3>US County Health Dashboard</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">Geospatial</span><span class="proj-tag">Healthcare</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Tableau · 01</div><h3>US County Health Dashboard</h3><div class="proj-tags"><span class="proj-tag" data-tool="Tableau">Tableau</span><span class="proj-tag" data-tool="Geospatial">Geospatial</span><span class="proj-tag" data-tool="Healthcare">Healthcare</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">Identify geographic clusters of health risk across 3,190+ US counties to guide resource allocation. Built 4 interconnected Tableau views — poverty bar chart, FIPS county map, poverty vs inactivity scatter, STI rate ranking.</p>
@@ -450,7 +476,7 @@
 </div>
 </div>
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Tableau · 02</div><h3>Airbnb NYC Market Analysis</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">EDA</span><span class="proj-tag">Geospatial</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Tableau · 02</div><h3>Airbnb NYC Market Analysis</h3><div class="proj-tags"><span class="proj-tag" data-tool="Tableau">Tableau</span><span class="proj-tag">EDA</span><span class="proj-tag" data-tool="Geospatial">Geospatial</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">Uncover pricing trends, host concentration, and demand patterns across 5 NYC boroughs using 30,478 listings and 366,307 reviews. Built geographic maps, scatter plots, and borough comparison charts.</p>
@@ -460,7 +486,7 @@
 </div>
 </div>
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Tableau · 03</div><h3>Online Retail Revenue &amp; Customer Insights</h3><div class="proj-tags"><span class="proj-tag">Tableau</span><span class="proj-tag">Customer Analytics</span><span class="proj-tag">Revenue</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Tableau · 03</div><h3>Online Retail Revenue &amp; Customer Insights</h3><div class="proj-tags"><span class="proj-tag" data-tool="Tableau">Tableau</span><span class="proj-tag" data-tool="Customer Analytics">Customer Analytics</span><span class="proj-tag" data-tool="Revenue">Revenue</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">Answer CEO and CMO-level questions on revenue trends and customer value from 541K+ UCI Online Retail transactions across 38 countries. Built 4 executive visuals as part of Tata Forage simulation.</p>
@@ -478,7 +504,7 @@
 <div class="proj-group-header"><span class="proj-group-icon">🐍</span><span class="proj-group-title">Python &amp; Analytics</span><span class="proj-group-count">2 projects</span></div>
 <div class="proj-grid">
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Python · 01</div><h3>Real Estate Investment Advisor — ML App</h3><div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">XGBoost</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">MLflow</span><span class="proj-tag">Streamlit</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Python · 01</div><h3>Real Estate Investment Advisor — ML App</h3><div class="proj-tags"><span class="proj-tag" data-tool="Python">Python</span><span class="proj-tag" data-tool="XGBoost">XGBoost</span><span class="proj-tag" data-tool="Scikit-learn">Scikit-learn</span><span class="proj-tag" data-tool="MLflow">MLflow</span><span class="proj-tag" data-tool="Streamlit">Streamlit</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">Scale property investment evaluation across 250,000 records using ML. End-to-end pipeline — cleaning, feature engineering, Random Forest classifier + XGBoost regressor, MLflow tracking, deployed as live Streamlit app.</p>
@@ -492,7 +518,7 @@
 </div>
 
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Python · 02</div><h3>Shopper Spectrum — E-Commerce Customer Intelligence</h3><div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">KMeans</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">Collaborative Filtering</span><span class="proj-tag">Streamlit</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Python · 02</div><h3>Shopper Spectrum — E-Commerce Customer Intelligence</h3><div class="proj-tags"><span class="proj-tag" data-tool="Python">Python</span><span class="proj-tag" data-tool="KMeans">KMeans</span><span class="proj-tag" data-tool="Scikit-learn">Scikit-learn</span><span class="proj-tag" data-tool="Collaborative Filtering">Collaborative Filtering</span><span class="proj-tag" data-tool="Streamlit">Streamlit</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">An e-commerce retailer had 4,338 customers and 392K transactions but no way to identify high-value customers, at-risk churners, or what products to recommend. Built end-to-end customer intelligence — RFM feature engineering, KMeans segmentation (k=4), and item-based collaborative filtering using cosine similarity across 3,877 products.</p>
@@ -511,7 +537,7 @@
 <div class="proj-group-header"><span class="proj-group-icon">🗄️</span><span class="proj-group-title">SQL</span><span class="proj-group-count">1 project</span></div>
 <div class="proj-grid">
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">SQL · 01</div><h3>Operational KPI Analysis — SQL &amp; PostgreSQL</h3><div class="proj-tags"><span class="proj-tag">PostgreSQL</span><span class="proj-tag">CTEs</span><span class="proj-tag">Window Functions</span><span class="proj-tag">Aggregations</span><span class="proj-tag">Joins</span></div></div>
+<div class="proj-card-top"><div class="proj-num">SQL · 01</div><h3>Operational KPI Analysis — SQL &amp; PostgreSQL</h3><div class="proj-tags"><span class="proj-tag" data-tool="PostgreSQL">PostgreSQL</span><span class="proj-tag" data-tool="CTEs">CTEs</span><span class="proj-tag" data-tool="Window Functions">Window Functions</span><span class="proj-tag" data-tool="Aggregations">Aggregations</span><span class="proj-tag" data-tool="Joins">Joins</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">The raw operational data behind the KPI &amp; SLA dashboard needed to be extracted, cleaned, and structured entirely in SQL before Power BI could visualise it. This covers the full SQL layer — schema design, data loading, and analytical queries powering the dashboard.</p>
@@ -527,7 +553,7 @@
 <div class="proj-group-header"><span class="proj-group-icon">📋</span><span class="proj-group-title">Excel</span><span class="proj-group-count">1 project</span></div>
 <div class="proj-grid">
 <div class="proj-card">
-<div class="proj-card-top"><div class="proj-num">Excel · 01</div><h3>E-Commerce Sales Dashboard</h3><div class="proj-tags"><span class="proj-tag">Excel</span><span class="proj-tag">Pivot Tables</span><span class="proj-tag">Data Modeling</span></div></div>
+<div class="proj-card-top"><div class="proj-num">Excel · 01</div><h3>E-Commerce Sales Dashboard</h3><div class="proj-tags"><span class="proj-tag" data-tool="Excel">Excel</span><span class="proj-tag" data-tool="Pivot Tables">Pivot Tables</span><span class="proj-tag" data-tool="Data Modeling">Data Modeling</span></div></div>
 <div class="proj-card-body">
 <div class="proj-problem">The Problem</div>
 <p class="proj-desc">Analyze 2016–2018 e-commerce performance across $15.8M revenue, 113K orders, and 89K customers using Excel-only tools. Built with Pivot Tables and Master Data modeling — no BI tool required.</p>
